@@ -68,6 +68,8 @@ class App extends Component {
   handleClear = () => {
     this.setState({email:''})
     this.setState({password:''})
+    this.setState({emailError:''})
+    this.setState({passwordError:''})
   }
   handleOpenRegister = () => {
     if (this.state.emailRegister.length <= 0) {
@@ -109,6 +111,9 @@ class App extends Component {
     this.setState({emailRegister:''})
     this.setState({passwordRegister:''})
     this.setState({confirmPasswordRegister:''})
+    this.setState({emailRegisterError:''})
+    this.setState({passwordRegisterError:''})
+    this.setState({confirmPasswordRegisterError:''})
   }
   render() {
     return (
